@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-kettle</artifactId>
+        <groupId>com.shun.kettle</groupId>
+        <version>0.0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>kettle-dependencies</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-core</artifactId>
+            <version>${kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-engine</artifactId>
+            <version>${kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho</groupId>
+            <artifactId>metastore</artifactId>
+            <version>${kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho</groupId>
+            <artifactId>pentaho-platform-api</artifactId>
+            <version>${kettle.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-vfs2</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scannotation</groupId>
+            <artifactId>scannotation</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>simple-jndi</groupId>
+            <artifactId>simple-jndi</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>pentaho-public</id>
+            <name>Pentaho Public</name>
+            <url>http://nexus.pentaho.org/content/groups/omni/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>interval:15</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>pentaho-public-release</id>
+            <name>Pentaho Public Release</name>
+            <url>http://nexus.pentaho.org/repository/proxy-pentaho-public-release-group/</url>
+        </repository>
+    </repositories>
+</project>
